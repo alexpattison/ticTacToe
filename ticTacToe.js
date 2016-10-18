@@ -8,7 +8,7 @@ console.log(board[0]);
 console.log(board[1]);
 console.log(board[2]);
 
-var player = 1;
+var player = 0;
 
 process.stdin.setEncoding('utf8');
 
@@ -23,6 +23,8 @@ process.stdin.on('readable', () => {
     console.log(board[0]);
     console.log(board[1]);
     console.log(board[2]);
+    console.log('');
+    console.log('Player ' + (player % 2 + 1) + '\'s turn')
   }
 
   player += 1;
